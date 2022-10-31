@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import 'CardListView.dart';
-import 'model.dart';
+import 'widgets/CardListView.dart';
+import 'models/model.dart';
 
 void main() {
   var state = MyState();
