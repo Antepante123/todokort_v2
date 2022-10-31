@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'model.dart';
-import 'CardList.dart';
+import '../models/model.dart';
+import '../widgets/CardList.dart';
 
 String apiKey = "7f1cb36d-0e28-4d4b-8ade-c5275cf291b0";
 

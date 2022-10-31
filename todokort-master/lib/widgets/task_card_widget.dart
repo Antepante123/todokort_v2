@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todokort/create_task.dart';
-import 'package:todokort/model.dart';
+import 'package:todokort/widgets/create_task.dart';
+import 'package:todokort/models/model.dart';
 import 'package:http/http.dart' as http;
 
 class TaskCardWidget extends StatelessWidget {

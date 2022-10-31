@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'internetFetcher.dart';
+import '../api_handling/internetFetcher.dart';
 
 class TaskCard {
   String title;

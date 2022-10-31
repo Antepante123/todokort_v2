@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'CardList.dart';
 import 'create_task.dart';
-import 'main.dart';
-import 'model.dart';
+import '../main.dart';
+import '../models/model.dart';
 import 'package:provider/provider.dart';
 
 class CardsListView extends StatelessWidget {
@@ -49,7 +49,9 @@ class CardsListView extends StatelessWidget {
                         done: false,
                         id: "",
                       ))));
-          Provider.of<MyState>(context, listen: false).addCard(newTask);
+          if (newTask != null) {
+            Provider.of<MyState>(context, listen: false).addCard(newTask);
+          }
         },
       ),
     );

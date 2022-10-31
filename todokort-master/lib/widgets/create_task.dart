@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'CardListView.dart';
-import 'model.dart';
+import '../models/model.dart';
 import 'task_card_widget.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -41,18 +41,7 @@ class CreateTaskState extends State<CreateTask> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         centerTitle: true,
-        leading: GestureDetector(
-          child: Text(
-            "Back",
-            style: TextStyle(fontSize: 20),
-          ),
-          onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: ((context) => CardsListView())));
-          },
-        ),
         title: Text("Create Task"),
       ),
       body: SingleChildScrollView(

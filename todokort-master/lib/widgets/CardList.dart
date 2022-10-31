@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'model.dart';
+import '../models/model.dart';
 import 'create_task.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
